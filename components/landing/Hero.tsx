@@ -18,7 +18,7 @@ function Hero() {
   const imageRef = useRef(null);
 
   const handleRegisterClick = () => {
-    router.push("/signup");
+    router.push("/");
   };
 
   useEffect(() => {
