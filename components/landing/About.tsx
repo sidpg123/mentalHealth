@@ -32,8 +32,7 @@ export default function About() {
         </div>
 
 
-        <div className="w-80">
-
+        <div className="w-80 pb-14">
           <Image src={"/docBooking.png"} alt={"Doctor booking"} width={400} height={400} />
           <h1 className="text-center pb-2 tracking-wide text-lg">
             Expert Consultation & Support
