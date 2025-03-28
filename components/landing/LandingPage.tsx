@@ -1,4 +1,5 @@
 // import About from "./About";
+import About from "./About";
 import FAQ from "./FAQ";
 import Footer from "./Footer";
 
@@ -14,7 +15,7 @@ export default function LandingPage() {
         <Hero />
 
 
-      {/* <About /> */}
+      <About />
 
       <FAQ />
       {/* <ImageToggleComponent /> */}
