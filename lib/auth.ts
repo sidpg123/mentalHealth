@@ -1,6 +1,6 @@
 import db from "@/prisma/prisma";
 import bcrypt from "bcryptjs";
-import NextAuth, { AuthOptions } from "next-auth";
+import { AuthOptions } from "next-auth";
 import CredentialProvider from "next-auth/providers/credentials";
 import GoogleProvider from "next-auth/providers/google";
 
@@ -70,8 +70,8 @@ export const NEXT_AUTH_CONFIG: AuthOptions = {
         jwt: async ({ token, user }) => {
             if (user) {
                 token.id = user.id;
-                token.email = user.email!,
-                token.name = user.name!,
+                token.email = user.email as string;
+                token.name = user.name as string;
                 token.role = user.role;
             }
             return token;

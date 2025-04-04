@@ -1,17 +1,17 @@
 // app/questionnaire/dass21/page.tsx
 "use client";
 
-import { useState } from "react";
-import { useSession } from "next-auth/react";
-import { useRouter } from "next/navigation";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
-import { Separator } from "@/components/ui/separator";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Progress } from "@/components/ui/progress";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Separator } from "@/components/ui/separator";
 import { Info } from "lucide-react";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 const DASS21Questions = [
   { id: 1, text: "I found it hard to wind down", category: "s" },
@@ -71,7 +71,7 @@ const severityLevels = {
 };
 
 export default function DASS21Page() {
-  const { data: session, status } = useSession();
+  const { status } = useSession();
   const router = useRouter();
   const [responses, setResponses] = useState<Record<number, string>>({});
   const [results, setResults] = useState<any>(null);
