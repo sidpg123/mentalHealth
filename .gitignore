@@ -35,3 +35,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+<<<<<<< HEAD
+=======
+.env
+>>>>>>> c288cf5 (gitignore)
