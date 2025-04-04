@@ -17,8 +17,8 @@ function Hero() {
   const buttonsRef = useRef(null);
   const imageRef = useRef(null);
 
-  const handleRegisterClick = () => {
-    router.push("/");
+  const handleTestRequest = () => {
+    router.push("/questionnaire/dass21");
   };
 
   useEffect(() => {
@@ -134,7 +134,7 @@ function Hero() {
           >
             <Button
               className="py-5 px-7 mr-3 bg-[#4A72FF] hover:bg-blue-500 shadow-md shadow-blue-600"
-              onClick={handleRegisterClick}
+              onClick={handleTestRequest}
             >
               Take Test <ArrowCircleUpIcon className="rotate-90" />
             </Button>

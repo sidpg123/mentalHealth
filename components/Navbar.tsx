@@ -35,7 +35,7 @@ function Navbar() {
             </div>
             <div>
               <Button onClick={() => {
-                router.push('/')
+                router.push('/signin')
               }} className="hidden md:block bg-[#4A72FF] hover:bg-blue-500 shadow-md shadow-blue-600">
                 Login
               </Button>
