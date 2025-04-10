@@ -31,6 +31,7 @@ function Navbar() {
                 <Link href={"/"}>About</Link>
                 <Link href={"/"}>Contact</Link>
                 <Link href={"/"}>FAQ</Link>
+                <Link href={"/mental-health-support"}>Inner Voice</Link>
               </div>
             </div>
             <div>

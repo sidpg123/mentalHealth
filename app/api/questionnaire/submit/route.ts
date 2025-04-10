@@ -27,7 +27,7 @@ function calculateDASS21Scores(responses: Record<number, string>) {
   Object.entries(responses).forEach(([questionId, value]) => {
     const qId = parseInt(questionId);
     const score = parseInt(value);
-    
+
     if (categories.depression.includes(qId)) {
       scores.depression += score;
     } else if (categories.anxiety.includes(qId)) {

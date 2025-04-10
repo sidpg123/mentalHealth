@@ -1,15 +1,18 @@
 "use client";
-import Image from "next/image";
-import { Button } from "../ui/button";
-import { FaRegArrowAltCircleUp as ArrowCircleUpIcon } from "react-icons/fa";
-import { useRouter } from "next/navigation";
-import Navbar from "../Navbar";
-import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useEffect, useRef } from "react";
+import { FaRegArrowAltCircleUp as ArrowCircleUpIcon } from "react-icons/fa";
+import Navbar from "../Navbar";
+import { Button } from "../ui/button";
 
 function Hero() {
   const router = useRouter();
   
+  // State to store session data
+  // const [session, setSession] = useState(null);
+
   // Refs for animating text elements
   const subtitleRef = useRef(null);
   const titleRef = useRef(null);
@@ -22,6 +25,14 @@ function Hero() {
   };
 
   useEffect(() => {
+    // // Fetch session data inside useEffect
+    // const fetchSession = async () => {
+    //   const sessionData = await getSession();
+    //   setSession(sessionData);
+    // };
+
+    // fetchSession();
+
     // Create a timeline for sequential animations
     const tl = gsap.timeline({
       defaults: { 
