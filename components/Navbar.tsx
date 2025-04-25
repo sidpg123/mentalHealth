@@ -28,9 +28,9 @@ function Navbar() {
             </div>
             <div className="hidden md:block">
               <div className="ml-4 flex items-center space-x-16">
-                <Link href={"/"}>About</Link>
-                <Link href={"/"}>Contact</Link>
-                <Link href={"/"}>FAQ</Link>
+                <Link href={"/#about"}>About</Link>
+                <Link href={"/#contact"}>Contact</Link>
+                <Link href={"/#faq"}>FAQ</Link>
                 <Link href={"/mental-health-support"}>Inner Voice</Link>
               </div>
             </div>
@@ -49,8 +49,7 @@ function Navbar() {
               >
                 {isClick ? (
                   <CloseIcon
-                    // color="warning"
-                    // fontSize="large"
+
                     className="text-4xl"
                   />
                 ) : (
@@ -86,6 +85,14 @@ function Navbar() {
               >
                 FAQ
               </Link>
+              <div>
+              <Button onClick={() => {
+                router.push('https://minimannveda-git-main-aditya-rukadikars-projects.vercel.app')
+              }} className=" bg-[#4A72FF] hover:bg-blue-500 shadow-md shadow-blue-600">
+                Login
+              </Button>
+              </div>
+              
             </div>
           </div>
         )}

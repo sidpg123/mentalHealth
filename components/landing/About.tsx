@@ -4,7 +4,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <section className="min-h-screen ">
+    <section id="about" className="min-h-screen ">
       <div className="text-center">
         <h1 className="mt-16 md:mt-0 text-sm font-bold bg-gradient-to-r from-[#4A72FF] via-[#5C53D1] to-[#712D99] bg-clip-text text-transparent">
           MannVeda – Your Mental Wellness Companion
