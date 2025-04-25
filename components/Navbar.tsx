@@ -36,7 +36,7 @@ function Navbar() {
             </div>
             <div>
               <Button onClick={() => {
-                router.push('/signin')
+                router.push('https://minimannveda-git-main-aditya-rukadikars-projects.vercel.app')
               }} className="hidden md:block bg-[#4A72FF] hover:bg-blue-500 shadow-md shadow-blue-600">
                 Login
               </Button>
