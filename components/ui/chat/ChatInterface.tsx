@@ -98,7 +98,8 @@ export const ChatInterface = () => {
         </p>
       </div>
       
-      <ScrollArea className="flex-1 p-4">
+      <ScrollArea className="flex-1 p-4 max-h-[calc(80vh-200px)] overflow-y-auto">
+
         <div className="space-y-4">
           {displayMessages.length === 0 ? (
             <div className="flex flex-col items-center justify-center h-64 text-center">
